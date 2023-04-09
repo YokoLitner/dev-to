@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Статьи</title>
+  </head>
+  <body>
+    <header
+      style="
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        align-items: center;
+        border-bottom: 1px solid gray;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 35px;
+      "
+    >
+      <p style="margin: 0; font-size: 30px; font-weight: bold">dev.to</p>
+    </header>
+    <div style="background-color: #fff; padding-top: 65px">
+      <div>
+        {% autoescape off %} {{ article.body_html }} {% endautoescape %}
+      </div>
+    </div>
+  </body>
+</html>
